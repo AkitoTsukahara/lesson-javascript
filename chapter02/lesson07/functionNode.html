@@ -1,0 +1,19 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>test</title>
+</head>
+<body>
+<p id="aaaaa">t<strong>es</strong>t</p>
+
+<script type="text/javascript">
+    const p = document.getElementById('aaaaa');
+
+    const newnode = document.createElement('em');
+    newnode.appendChild(document.createTextNode('置き換えるノード'));
+
+    p.replaceChild(newnode, p.firstChild);
+</script>
+</body>
+</html>
