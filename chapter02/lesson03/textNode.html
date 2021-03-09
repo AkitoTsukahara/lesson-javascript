@@ -1,0 +1,18 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>test</title>
+</head>
+<body>
+<p id="aaaaa">t<strong>es</strong>t</p>
+
+<script type="text/javascript">
+    const p = document.getElementById('aaaaa');
+    const children = p.childNodes;
+    const textnode = children.item(0);	//テキストノード
+    console.log(textnode.nodeValue);
+    textnode.nodeValue = "書き換えました";
+</script>
+</body>
+</html>
